@@ -50,7 +50,7 @@ Builds the app for production to the `build` folder.\
 Your app is ready to be deployed!
 <br>
 <br>
-But in the current deployment, just after pushing the changes to the repository, the code automtically gets deployed through Netlify [https://adoring-cray-17e46a.netlify.app/](https://adoring-cray-17e46a.netlify.app/) .
+But in the current deployment, just after pushing the changes to the repository, the code automtically gets deployed through Netlify [https://amazing-hodgkin-9b16fe.netlify.app/](https://amazing-hodgkin-9b16fe.netlify.app/) .
 
 ## Basic overview of the work:
 1. downloaded the dataset and after changing it to json format, kept it in the `src/pages` folder.
