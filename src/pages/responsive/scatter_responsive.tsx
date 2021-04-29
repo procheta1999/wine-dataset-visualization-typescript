@@ -4,6 +4,7 @@ import data from '../wine.json'
 var a:any=[]; //initialising the array containing the hue values
 var b:any=[]; // initialising the array containing the color_intensity values
 var d:any=[]; // intialising the array containing the pair of color_intensity value and hue value
+// props
 interface Props {
     width: string,
 }
