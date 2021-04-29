@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#scatter{
+  width:300px;
+    height:300px;
+    margin-left: -49px;
 }
+#ipad{
+  width:300px;
+    height:300px;
+    margin-left: -49px;
+    display:none;
+}
+#iphone{
+  width:300px;
+    height:300px;
+    margin-left: -49px;
+    display:none;
+}
+#scatterplot{
+  width:300px;
+    height:300px;
+    margin-left: -49px;
+    display:none;
+}
+#bar{
+  width: 300px;
+    height: 300px;
+    margin-left: -49px;
+    margin-top: 150px;
+}
+#barplot{
+  width: 300px;
+    height: 300px;
+    margin-left: -49px;
+    margin-top: 123px;
+    display:none;
+}
+@media only screen and (max-width: 600px) {
+  #scatter {
+    width:300px !important;
+    height:300px !important;
+    margin-left: -49px !important;
+    display:none !important;
+  }
+  #scatterplot{
+    width:300px !important;
+    height:300px !important;
+    margin-left: -49px !important;
+    display: block !important;
+  }
+  #bar{
+    display: none !important;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+  #barplot{
+    display: block !important;
+    margin-top: 0px !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 370px) and (max-width: 413px) {
+  #barplot{
+    display: block !important;
+    margin-top: 78px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 766px) and (max-width: 768px) {
+  #space{
+    margin-top: 400px !important;
+  }
+  #ipad{
+    display: block !important;
+  }
+  #scatter{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 316px) and (max-width: 322px) {
+  #iphone{
+    display: block !important;
+  }
+  #scatter{
+    display: none !important;
+  }
+  #scatterplot{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1022px) and (max-width: 1024px) {
+  #space{
+    margin-top: 540px !important;
+  }
+}
+@media only screen and (min-width: 409px) and (max-width: 411px) {
+  #space{
+    margin-top: 540px !important;
+  }
+}
+@media only screen and (min-width: 2611px) and (max-width: 2620px) {
+  #space{
+    margin-top: 540px !important;
   }
 }

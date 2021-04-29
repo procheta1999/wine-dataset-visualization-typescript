@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Wine Dataset Visualization App (Built with TypeScript)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have used TypeScript here.
+
+## Tools used:
+
+1. TypeScript
+2. React via CRA
+3. Yarn `(for installing the node modules, running the project and also deploying it)`
+4. Echarts for React `(for the scatter plot and bar plot)`
+
+### File Structure:
+
+1. src folder -> pages folder:
+`file structure`
+<br>
+--> bar.tsx : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis.
+<br>
+--> bar_responsive.tsx (in responsive folder) : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis but appears only in screens of width less or equal to 600px
+<br>
+--> scatter.tsx : contains the scatter plot component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis. 
+<br>
+--> scatter_responsive.tsx (in responsive folder) : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of selevtive width. Width of the plot is passed as 'props' to the component.
+<br>
+--> wine.json: containing the dataset containing all the values with their respective keys. The file from where all the values are taken for plotting the bar and scatter plots. Dervied from 'wine.data' from the [Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine)
+
+2. src folder -> App.tsx : `where both the scatter plot and the bar plot components are rendered to show it on the opening page`
+3. src folder -> index.tsx : `to render the App component`
+4. css files :`to style the pages`
+5. package.json : `where all the configuration and node modules are there`
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Installs all the necessary node modules.
 ### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+<br>
+<br>
+But in the current deployment, just after pushing the changes to the repository, the code automtically gets deployed through Netlify [https://adoring-cray-17e46a.netlify.app/](https://adoring-cray-17e46a.netlify.app/) .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Basic overview of the work:
+1. downloaded the dataset and after changing it to json format, kept it in the `src/pages` folder.
+2. built `bar.tsx`, `bar_responsive.tsx` which is used according to screen size, for keeping the bar graph component, which I have built with Echarts for React and customized as well.
+3. built `scatter.tsx`, `scatter_responsive.tsx` which is used according to screen size, for keeping the scatter plot components with the help of Echarts for React and customized it as well.
+4. render the graph components in `App.tsx` . 
